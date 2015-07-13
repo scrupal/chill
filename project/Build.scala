@@ -19,7 +19,7 @@ object ChillBuild extends Build {
   val sharedSettings = Defaults.coreDefaultSettings ++ mimaDefaultSettings ++ scalariformSettings ++ Seq(
 
     version := "0.7.0-SNAPSHOT",
-    organization := "com.twitter",
+    organization := "org.scrupal",
     scalaVersion := "2.11.7",
     scalacOptions ++= Seq("-unchecked", "-deprecation"),
     ScalariformKeys.preferences := formattingPreferences,
@@ -53,7 +53,7 @@ object ChillBuild extends Build {
     publishArtifact in Test := false,
     pomIncludeRepository := { x => false },
     pomExtra := (
-      <url>https://github.com/twitter/chill</url>
+      <url>https://github.com/scrupal/chill</url>
           <licenses>
         <license>
         <name>Apache 2</name>
@@ -63,8 +63,8 @@ object ChillBuild extends Build {
         </license>
         </licenses>
         <scm>
-        <url>git@github.com:twitter/chill.git</url>
-        <connection>scm:git:git@github.com:twitter/chill.git</connection>
+        <url>git@github.com:scrupal/chill.git</url>
+        <connection>scm:git:git@github.com:scrupal/chill.git</connection>
         </scm>
         <developers>
         <developer>
@@ -77,6 +77,11 @@ object ChillBuild extends Build {
         <name>Sam Ritchie</name>
         <url>http://twitter.com/sritchie</url>
           </developer>
+        <developer>
+          <id>reid-spencer</id>
+          <name>Reid Spencer</name>
+          <url>http://github.com/reid-spencer</url>
+        </developer>
         </developers>)
   )
 
